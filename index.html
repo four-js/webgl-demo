@@ -152,66 +152,28 @@
     </style>
   </head>
   <body>
-    <div id="info">
+<!--     <div id="info">
       This is a demo related to <a href="http://html5hub.com/using-webgl-to-add-3d-effects-to-your-website/">this article</a>. Hover over the circles to trigger the 3D animations.
 
       <div id="credits">
        Made by <a href="http://twitter.com/glecollinet">@glecollinet</a> using <a href="http://threejs.org">three.js</a> and <a href="http://jeremyckahn.github.io/shifty/">Shifty</a></div>
       </div>
-    </div>
+    </div> -->
 
-    <h1>Why HTML5 is awesome</h1>
-
-    <div class="features">
-
-      <div class="feature">
-        <div id="shield-container" class="container">
-          <div class="circle"></div>
-        </div>
-        <div class="text">
-          <h2><span>1.</span> HTML5</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non nisl faucibus.</p>
+    <div class="feature">
+      <div id="ball-container" class="container">
+        <div class="circle">
+          <div class="shadow"></div>
         </div>
       </div>
-
-      <div class="feature">
-        <div id="ball-container" class="container">
-          <div class="circle">
-            <div class="shadow"></div>
-          </div>
-        </div>
-        <div class="text">
-          <h2><span>2.</span> ????</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non nisl faucibus.</p>
-        </div>
-      </div>
-
-      <div class="feature">
-        <div id="dollar-container" class="container">
-          <div class="circle"></div>
-        </div>
-        <div class="text">
-          <h2><span>3.</span> Profit</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non nisl faucibus.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="call-to-action">
-      <a href="#" class="button">Try HTML5 now</a>
     </div>
 
     <script src="js/shifty.min.js"></script>
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/three.min.js"></script>
-    <script src="js/html5.js"></script>
     <script src="js/ball.js"></script>
-    <script src="js/dollar.js"></script>
     <script>
       window.deg2rad = function(deg) { return deg * (Math.PI / 180); };
-      initHTML5();
-      initDollar();
       initBall();
     </script>
   </body>
