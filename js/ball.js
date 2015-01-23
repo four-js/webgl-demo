@@ -38,7 +38,14 @@ function initBall() {
     ball.position.y = -120;
     scene.add(ball);
 
-    renderer = new THREE.WebGLRenderer( { antialias: true } );
+    try {
+      renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
+      // renderer.domElement.style.position = "relative";
+    } catch (e) {
+      renderer = new THREE.CanvasRenderer();
+    }
+
+    renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( $container.width(), $container.height() );
 
     container.appendChild( renderer.domElement );
